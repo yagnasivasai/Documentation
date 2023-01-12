@@ -1,0 +1,4 @@
+apt list -a <package name>
+
+
+yum --showduplicates <package name>
