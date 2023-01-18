@@ -1,0 +1,61 @@
+Networking
+
+https://docs.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works
+
+https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices
+
+https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#application-security-groups
+
+https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal
+
+https://learn.microsoft.com/en-us/azure/load-balancer/skus
+
+https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview
+
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface
+
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances
+
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq#name-resolution-dns
+
+https://docs.microsoft.com/en-us/azure/load-balancer/backend-pool-management
+
+https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site
+
+https://docs.microsoft.com/en-us/azure/azure-policy/policy-definition
+
+https://azure.microsoft.com/en-us/blog/vnet-to-vnet-connecting-virtual-networks-in-azure-across-different-regions/
+
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering#requirements-and-constraints
+
+https://fastreroute.com/azure-network-security-groups-explained/
+
+https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview
+
+https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
+
+The connection monitor capability monitors communication at a regular interval and informs you of reachability, latency, and network topology changes between the VM and the endpoint
+The IP flow verify capability enables you to specify a source and destination IPv4 address, port, protocol (TCP or UDP), and traffic direction (inbound or outbound). IP flow verify then tests the communication and informs you if the connection succeeds or fails. If the connection fails, IP flow verify tells you which security rule allowed or denied the communication, so that you can resolve the problem.
+The connection troubleshoot capability enables you to test a connection between a VM and another VM, an FQDN, a URI, or an IPv4 address. The test returns similar information returned when using the connection monitor capability, but tests the connection at a point in time, rather than monitoring it over time, as connection monitor does.
+The NSG flow log capability allows you to log the source and destination IP address, port, protocol, and whether traffic was allowed or denied by an NSG.
+
+https://docs.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-portal
+
+https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps
+
+- A VPN gateway is used when creating a VPN connection to your on-premises network.
+
+Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. It is typically built on router platforms where each IPsec tunnel is modeled as a network interface or VTI (virtual tunnel interface).
+
+- Policy-based VPN devices use the combinations of prefixes from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. It is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine
+
+https://docs.microsoft.com/en-us/azure/dns/private-dns-overview
+
+https://docs.microsoft.com/en-us/azure/dns/private-dns-virtual-network-links
+
+https://docs.microsoft.com/en-us/azure/dns/private-dns-autoregistration
+ 
+https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection-monitor-in-all-public-regions/
+
+
+ 
