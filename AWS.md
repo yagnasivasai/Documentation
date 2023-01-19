@@ -1,0 +1,1 @@
+The two checks are: System Reachability Check, which confirms that AWS is able to get the network packets to the user's instance. Instance Status Check, which detects a problem within the EC2 instance
