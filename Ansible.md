@@ -67,3 +67,5 @@ ansible -m debug -a "var=hostvars['hostname']" localhost
 
 24. Explain Ansible facts
 Ansible facts can be thought of as a way for Ansible to get information about a host and store it in variables for easy access. This information stored in predefined variables is available to use in the playbook. To generate facts, Ansible runs the set-up module.
+
+https://www.middlewareinventory.com/blog/ansible-ad-hoc-commands/
