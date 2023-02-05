@@ -8,4 +8,12 @@
 
 <h1>Git commands</h1>
 
-gitgraph
++ git add .
++ git commit -m <message>
++ cdgitgraph
++ git log -p
++ git diff <> <>
++ git diff --cached <h3> shows the differnce between staged and whats the last commit in repository <h3>
++ git diff <h3> Between working and last commit <h3>
++ git diff HEAD <h3> Between working to commit in repository <h3>
+<img src="E:\Doc\GImages\git1.svg">
