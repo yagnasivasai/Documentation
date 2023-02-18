@@ -18,6 +18,7 @@ The two checks are: System Reachability Check, which confirms that AWS is able t
 + https://github.com/aws-samples/aws-serverless-openai-chatbot-demo?utm_id=FAUN_Shipped359_Link_title
 + https://github.com/paololazzari/cloudtrail-event-fuzzy-viewer?utm_id=FAUN_CyraBee359_Link_title
 + https://github.com/onestar1004/Django-Ecommerce?utm_id=FAUN_CyraBee359_Link_title
++ https://github.com/iann0036/former2?utm_id=FAUN_Shipped360_Link_title #
 
 ### Serverless
 + https://blog.awsfundamentals.com/aws-lambda-pricing-a-complete-guide-to-understanding-the-cost-of-the-serverless-service?utm_id=FAUN_Shipped359_Link_title
