@@ -1,22 +1,24 @@
 #Ceph
 
+## On Cephadmin Node
+
 sudo yum upgrade -y
 sudo yum update -y
+sudo yum install curl -y
 sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 sudo yum update -y
 sudo yum install -y python39
-sudo yum install -y yum-utils
 sudo yum install podman -y
 
-hostnamectl set-hostname cephadmin
+<!-- hostnamectl set-hostname cephadmin
 hostnamectl set-hostname cephnode1
-hostnamectl set-hostname cephnode2
+hostnamectl set-hostname cephnode2 -->
 
-sudo tee -a /etc/hosts<<EOF
+<!-- sudo tee -a /etc/hosts<<EOF
 192.168.2.185    cephadmin
 192.168.2.186    cephnode1
 192.168.2.188    cephnode2
-EOF
+EOF -->
 
 curl --silent --remote-name --location https://github.com/ceph/ceph/raw/quincy/src/cephadm/cephadm
 chmod +x cephadm
