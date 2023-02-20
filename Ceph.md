@@ -8,7 +8,7 @@
 - sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 - sudo yum update -y
 - sudo yum install -y python39
-- sudo yum install podman -y
+- sudo yum install podman -y <<-Install on both master and worker->>
 - 
 - hostnamectl set-hostname cephadmin
 - hostnamectl set-hostname cephnode1
@@ -41,7 +41,24 @@
 - 
 - ceph orch host add ip-172-31-85-52.ec2.internal 172.31.85.52
 - ceph orch host add ip-172-31-89-147.ec2.internal 172.31.89.147
-- 
+  
+  
+- ceph orch daemon add osd ceph-01:/dev/sdb
+- ceph orch daemon add osd ceph-02:/dev/sdb
+- ceph orch daemon add osd ceph-03:/dev/sdb
+- ceph orch daemon add osd ceph[0,1,2]:/dev/sd[b,c]
+- ceph orch daemon add osd ceph[0,1,2]:/dev/sd[b,c]
+  
+- ceph orch device ls 
+- ceph osd tree
+- ceph tell mon.* injectargs --mon_allow_pool_delete true
+- ceph osd pool rm default.rgw.buckets.data default.rgw.buckets.data --yes-i-really-really-mean-it
+- python3 ceph.py \
+- --rbd-data-pool-name default.rgw.buckets.data
+- yum install python3-rbd -y
+- yum install python3-rados -y
+  
+
 - dnf install chrony -y
 - systemctl start chronyd
 - systemctl enable chronyd
@@ -58,24 +75,6 @@
 - passwd ceph
 - visudo
 - ceph    ALL=(ALL)       NOPASSWD: ALL
-- 
-- 
-- ceph orch daemon add osd ceph-01:/dev/sdb
-- ceph orch daemon add osd ceph-02:/dev/sdb
-- ceph orch daemon add osd ceph-03:/dev/sdb
-- ceph orch daemon add osd ceph[0,1,2]:/dev/sd[b,c]
-- ceph orch daemon add osd ceph[0,1,2]:/dev/sd[b,c]
-- 
-- 
-- ceph orch device ls 
-- ceph osd tree
-- ceph tell mon.* injectargs --mon_allow_pool_delete true
-- ceph osd pool rm default.rgw.buckets.data default.rgw.buckets.data --yes-i-really-really-mean-it
-- python3 ceph.py \
-- --rbd-data-pool-name default.rgw.buckets.data
-- yum install python3-rbd -y
-- yum install python3-rados -y
-- 
 - ![2023-01-24-10-28-42](https://user-images.githubusercontent.com/60940642/214216954-81f099f5-a49e-43c7-8a36-8d98841e31e1.png)
 - ![2023-01-24-10-29-39](https://user-images.githubusercontent.com/60940642/214216958-66ef0a62-db66-4239-8339-f78222c44eb9.png)
 - ![2023-01-24-10-43-00](https://user-images.githubusercontent.com/60940642/214216961-6a7610db-d698-4f53-91a0-686f7c2e4f47.png)
