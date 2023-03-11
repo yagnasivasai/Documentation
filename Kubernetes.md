@@ -15,3 +15,6 @@
 
 ### Security
 + https://kubernetes.io/blog/2023/01/20/security-behavior-analysis/?utm_id=FAUN_Kaptain359_Link_title
+
++ https://www.containiq.com/post/kubernetes-cpu-limits-and-throttling
++ https://blog.palark.com/why-cilium-for-kubernetes-networking/
