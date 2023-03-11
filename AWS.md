@@ -1,6 +1,8 @@
 The two checks are: System Reachability Check, which confirms that AWS is able to get the network packets to the user's instance. Instance Status Check, which detects a problem within the EC2 instance
 
-
+### AWS Blog
++ https://aws.amazon.com/blogs/mt/
++ 
 ### Presigned URL
 + https://fourtheorem.com/the-illustrated-guide-to-s3-pre-signed-urls/?utm_id=FAUN_DevOpsLinks359_Link_title
 
@@ -25,6 +27,7 @@ The two checks are: System Reachability Check, which confirms that AWS is able t
 
 ### AWS CDK
 + https://blog.serverlessadvocate.com/serverless-aws-cdk-pipeline-best-practices-patterns-part-1-ab80962f109d
++ https://fueled.com/the-cache/posts/backend/devops/aws-lambda-websockets/?utm_id=FAUN_CyraBee363_Link_title
 
 ### AWS Lambda
 + https://blog.serverlessadvocate.com/serverless-aws-cdk-pipeline-best-practices-patterns-part-1-ab80962f109d
