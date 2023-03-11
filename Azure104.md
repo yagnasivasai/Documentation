@@ -498,3 +498,5 @@ The key used to encrypt the backup data is present only on your site. Microsoft 
 
 
  
++ https://azure.microsoft.com/en-us/blog/scale-azure-firewall-snat-ports-with-nat-gateway-for-large-workloads/
++ 
